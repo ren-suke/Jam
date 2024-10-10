@@ -1,17 +1,12 @@
-//
-//  JamApp.swift
-//  Jam
-//
-//  Created by Ren Matsushita on 2024/10/06.
-//
-
 import SwiftUI
 
 @main
 struct JamApp: App {
+    @State private var jamAudioPlayer = JamAudioPlayer()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AudioPlayerView(presenter: AudioPlayerPresenter(audioPlayer: jamAudioPlayer))
         }
     }
 }

@@ -8,21 +8,85 @@
 
 /* Begin PBXBuildFile section */
 		FA41ACEE2CB2933700A57276 /* JamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41ACED2CB2933700A57276 /* JamApp.swift */; };
-		FA41ACF02CB2933700A57276 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41ACEF2CB2933700A57276 /* ContentView.swift */; };
+		FA41ACF02CB2933700A57276 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41ACEF2CB2933700A57276 /* AudioPlayerView.swift */; };
 		FA41ACF22CB2933800A57276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA41ACF12CB2933800A57276 /* Assets.xcassets */; };
 		FA41ACF52CB2933800A57276 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA41ACF42CB2933800A57276 /* Preview Assets.xcassets */; };
+		FA41ACFC2CB294CF00A57276 /* JamAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41ACFB2CB294CF00A57276 /* JamAudioPlayer.swift */; };
+		FA41ACFE2CB299C900A57276 /* utopia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA41ACFD2CB299C900A57276 /* utopia.mp3 */; };
+		FA41AD002CB2F9C000A57276 /* AudioSpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41ACFF2CB2F9C000A57276 /* AudioSpectrumView.swift */; };
+		FA41AD052CB3D63E00A57276 /* AudioPlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41AD042CB3D63E00A57276 /* AudioPlayerPresenter.swift */; };
+		FA41AD072CB4FBA500A57276 /* AudioPlayerSeekBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41AD062CB4FBA500A57276 /* AudioPlayerSeekBar.swift */; };
+		FA41AD092CB4FC0B00A57276 /* AudioPlayerLoopRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41AD082CB4FC0B00A57276 /* AudioPlayerLoopRangeView.swift */; };
+		FA41AD112CB563C600A57276 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41AD102CB563C600A57276 /* ShareViewController.swift */; };
+		FA41AD142CB563C600A57276 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FA41AD132CB563C600A57276 /* Base */; };
+		FA41AD182CB563C600A57276 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FA41AD0E2CB563C600A57276 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAABCB392CB6746200418FB3 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABCB382CB6746200418FB3 /* ShareView.swift */; };
+		FAABCB3B2CB6747C00418FB3 /* SharePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABCB3A2CB6747C00418FB3 /* SharePresenter.swift */; };
+		FAABCB3F2CB6799000418FB3 /* AppGroupsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABCB3E2CB6799000418FB3 /* AppGroupsDataStore.swift */; };
+		FAABCB412CB67BDC00418FB3 /* AppGroupsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABCB402CB67BDC00418FB3 /* AppGroupsDataStore.swift */; };
+		FAABCB442CB6BD9C00418FB3 /* AudioFilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABCB432CB6BD9C00418FB3 /* AudioFilesView.swift */; };
+		FAABCB462CB6BDA300418FB3 /* AudioFilesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABCB452CB6BDA300418FB3 /* AudioFilesPresenter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA41AD162CB563C600A57276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA41ACE22CB2933700A57276 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA41AD0D2CB563C600A57276;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA41AD192CB563C600A57276 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA41AD182CB563C600A57276 /* ShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA41ACEA2CB2933700A57276 /* Jam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA41ACED2CB2933700A57276 /* JamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamApp.swift; sourceTree = "<group>"; };
-		FA41ACEF2CB2933700A57276 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA41ACEF2CB2933700A57276 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
 		FA41ACF12CB2933800A57276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA41ACF42CB2933800A57276 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA41ACFB2CB294CF00A57276 /* JamAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamAudioPlayer.swift; sourceTree = "<group>"; };
+		FA41ACFD2CB299C900A57276 /* utopia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = utopia.mp3; sourceTree = "<group>"; };
+		FA41ACFF2CB2F9C000A57276 /* AudioSpectrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpectrumView.swift; sourceTree = "<group>"; };
+		FA41AD042CB3D63E00A57276 /* AudioPlayerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerPresenter.swift; sourceTree = "<group>"; };
+		FA41AD062CB4FBA500A57276 /* AudioPlayerSeekBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerSeekBar.swift; sourceTree = "<group>"; };
+		FA41AD082CB4FC0B00A57276 /* AudioPlayerLoopRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerLoopRangeView.swift; sourceTree = "<group>"; };
+		FA41AD0E2CB563C600A57276 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA41AD102CB563C600A57276 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FA41AD132CB563C600A57276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FA41AD152CB563C600A57276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAABCB382CB6746200418FB3 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		FAABCB3A2CB6747C00418FB3 /* SharePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePresenter.swift; sourceTree = "<group>"; };
+		FAABCB3C2CB678D500418FB3 /* Jam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jam.entitlements; sourceTree = "<group>"; };
+		FAABCB3D2CB6797200418FB3 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		FAABCB3E2CB6799000418FB3 /* AppGroupsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupsDataStore.swift; sourceTree = "<group>"; };
+		FAABCB402CB67BDC00418FB3 /* AppGroupsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupsDataStore.swift; sourceTree = "<group>"; };
+		FAABCB432CB6BD9C00418FB3 /* AudioFilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFilesView.swift; sourceTree = "<group>"; };
+		FAABCB452CB6BDA300418FB3 /* AudioFilesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFilesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FA41ACE72CB2933700A57276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA41AD0B2CB563C600A57276 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				FA41ACEC2CB2933700A57276 /* Jam */,
+				FA41AD0F2CB563C600A57276 /* ShareExtension */,
 				FA41ACEB2CB2933700A57276 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				FA41ACEA2CB2933700A57276 /* Jam.app */,
+				FA41AD0E2CB563C600A57276 /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +117,11 @@
 		FA41ACEC2CB2933700A57276 /* Jam */ = {
 			isa = PBXGroup;
 			children = (
+				FAABCB3C2CB678D500418FB3 /* Jam.entitlements */,
+				FA41AD012CB3D61800A57276 /* Application */,
 				FA41ACED2CB2933700A57276 /* JamApp.swift */,
-				FA41ACEF2CB2933700A57276 /* ContentView.swift */,
+				FA41ACFB2CB294CF00A57276 /* JamAudioPlayer.swift */,
+				FA41ACFD2CB299C900A57276 /* utopia.mp3 */,
 				FA41ACF12CB2933800A57276 /* Assets.xcassets */,
 				FA41ACF32CB2933800A57276 /* Preview Content */,
 			);
@@ -67,6 +136,59 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FA41AD012CB3D61800A57276 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FAABCB422CB6BD9200418FB3 /* AudioFiles */,
+				FA41AD022CB3D61F00A57276 /* AudioPlayer */,
+				FAABCB402CB67BDC00418FB3 /* AppGroupsDataStore.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FA41AD022CB3D61F00A57276 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FA41AD032CB3D62900A57276 /* Component */,
+				FA41ACEF2CB2933700A57276 /* AudioPlayerView.swift */,
+				FA41AD042CB3D63E00A57276 /* AudioPlayerPresenter.swift */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		FA41AD032CB3D62900A57276 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				FA41ACFF2CB2F9C000A57276 /* AudioSpectrumView.swift */,
+				FA41AD082CB4FC0B00A57276 /* AudioPlayerLoopRangeView.swift */,
+				FA41AD062CB4FBA500A57276 /* AudioPlayerSeekBar.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		FA41AD0F2CB563C600A57276 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FAABCB3D2CB6797200418FB3 /* ShareExtension.entitlements */,
+				FA41AD102CB563C600A57276 /* ShareViewController.swift */,
+				FAABCB3A2CB6747C00418FB3 /* SharePresenter.swift */,
+				FAABCB382CB6746200418FB3 /* ShareView.swift */,
+				FA41AD122CB563C600A57276 /* MainInterface.storyboard */,
+				FA41AD152CB563C600A57276 /* Info.plist */,
+				FAABCB3E2CB6799000418FB3 /* AppGroupsDataStore.swift */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		FAABCB422CB6BD9200418FB3 /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FAABCB432CB6BD9C00418FB3 /* AudioFilesView.swift */,
+				FAABCB452CB6BDA300418FB3 /* AudioFilesPresenter.swift */,
+			);
+			path = AudioFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +199,34 @@
 				FA41ACE62CB2933700A57276 /* Sources */,
 				FA41ACE72CB2933700A57276 /* Frameworks */,
 				FA41ACE82CB2933700A57276 /* Resources */,
+				FA41AD192CB563C600A57276 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA41AD172CB563C600A57276 /* PBXTargetDependency */,
 			);
 			name = Jam;
 			productName = Jam;
 			productReference = FA41ACEA2CB2933700A57276 /* Jam.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FA41AD0D2CB563C600A57276 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA41AD1C2CB563C600A57276 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				FA41AD0A2CB563C600A57276 /* Sources */,
+				FA41AD0B2CB563C600A57276 /* Frameworks */,
+				FA41AD0C2CB563C600A57276 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = FA41AD0E2CB563C600A57276 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +239,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					FA41ACE92CB2933700A57276 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					FA41AD0D2CB563C600A57276 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -116,6 +260,7 @@
 			projectRoot = "";
 			targets = (
 				FA41ACE92CB2933700A57276 /* Jam */,
+				FA41AD0D2CB563C600A57276 /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +270,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA41ACFE2CB299C900A57276 /* utopia.mp3 in Resources */,
 				FA41ACF52CB2933800A57276 /* Preview Assets.xcassets in Resources */,
 				FA41ACF22CB2933800A57276 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA41AD0C2CB563C600A57276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA41AD142CB563C600A57276 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +291,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA41ACF02CB2933700A57276 /* ContentView.swift in Sources */,
+				FA41AD052CB3D63E00A57276 /* AudioPlayerPresenter.swift in Sources */,
+				FAABCB462CB6BDA300418FB3 /* AudioFilesPresenter.swift in Sources */,
+				FA41ACF02CB2933700A57276 /* AudioPlayerView.swift in Sources */,
 				FA41ACEE2CB2933700A57276 /* JamApp.swift in Sources */,
+				FAABCB412CB67BDC00418FB3 /* AppGroupsDataStore.swift in Sources */,
+				FA41AD072CB4FBA500A57276 /* AudioPlayerSeekBar.swift in Sources */,
+				FAABCB442CB6BD9C00418FB3 /* AudioFilesView.swift in Sources */,
+				FA41AD002CB2F9C000A57276 /* AudioSpectrumView.swift in Sources */,
+				FA41AD092CB4FC0B00A57276 /* AudioPlayerLoopRangeView.swift in Sources */,
+				FA41ACFC2CB294CF00A57276 /* JamAudioPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA41AD0A2CB563C600A57276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAABCB392CB6746200418FB3 /* ShareView.swift in Sources */,
+				FA41AD112CB563C600A57276 /* ShareViewController.swift in Sources */,
+				FAABCB3B2CB6747C00418FB3 /* SharePresenter.swift in Sources */,
+				FAABCB3F2CB6799000418FB3 /* AppGroupsDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA41AD172CB563C600A57276 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA41AD0D2CB563C600A57276 /* ShareExtension */;
+			targetProxy = FA41AD162CB563C600A57276 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA41AD122CB563C600A57276 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA41AD132CB563C600A57276 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FA41ACF62CB2933800A57276 /* Debug */ = {
@@ -267,13 +459,17 @@
 		FA41ACF92CB2933800A57276 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jam/Jam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jam/Preview Content\"";
+				DEVELOPMENT_TEAM = 65BYKJ4KHA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Jam;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,13 +491,17 @@
 		FA41ACFA2CB2933800A57276 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jam/Jam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jam/Preview Content\"";
+				DEVELOPMENT_TEAM = 65BYKJ4KHA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Jam;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +514,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ren-matsushita.Jam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA41AD1A2CB563C600A57276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65BYKJ4KHA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ren-matsushita.Jam.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA41AD1B2CB563C600A57276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65BYKJ4KHA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ren-matsushita.Jam.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,6 +589,15 @@
 			buildConfigurations = (
 				FA41ACF92CB2933800A57276 /* Debug */,
 				FA41ACFA2CB2933800A57276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA41AD1C2CB563C600A57276 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA41AD1A2CB563C600A57276 /* Debug */,
+				FA41AD1B2CB563C600A57276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
