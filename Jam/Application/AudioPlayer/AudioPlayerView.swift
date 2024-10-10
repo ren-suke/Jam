@@ -94,10 +94,9 @@ struct AudioPlayerView<Presenter: AudioPlayerPresenterProtocol>: View {
         .padding(.horizontal, 16)
         .overlay(
             Picker("再生速度", selection: Binding<AudioPlaybackRate>(
-                get: { audioPlaybackRate },
+                get: { presenter.audioPlaybackRate },
                 set: { audioPlaybackRate in
                     presenter.didChange(audioPlaybackRate: audioPlaybackRate)
-                    self.audioPlaybackRate = audioPlaybackRate
                 }
             )) {
                 ForEach(AudioPlaybackRate.allCases, id: \.self) { audioPlayRate in
@@ -108,8 +107,6 @@ struct AudioPlayerView<Presenter: AudioPlayerPresenterProtocol>: View {
             alignment: .trailingLastTextBaseline
         )
     }
-    
-    @State private var audioPlaybackRate: AudioPlaybackRate = .default
 }
 
 extension TimeInterval {

@@ -6,16 +6,6 @@ struct AudioLoopRange {
     var endRatioOfAudioDuration: TimeInterval
 }
 
-//enum AudioPlayerSheetDestination<AudioPlayer: JamAudioPlayerProtocol>: Identifiable {
-//    var id: String {
-//        switch self {
-//        case .audioFiles: "audioFiles"
-//        }
-//    }
-//    
-//    case audioFiles(AudioPlayer)
-//}
-
 protocol AudioPlayerPresenterProtocol: ObservableObject {
     associatedtype AudioPlayer: JamAudioPlayerProtocol
     var audioFileName: String { get }
@@ -23,6 +13,7 @@ protocol AudioPlayerPresenterProtocol: ObservableObject {
     var audioSamples: [Float] { get }
     var audioDuration: TimeInterval { get }
     var audioCurrentTime: TimeInterval { get }
+    var audioPlaybackRate: AudioPlaybackRate { get }
     var audioLoopRange: AudioLoopRange { get }
     var shouldShowAudioFiles: AudioPlayer? { get set }
     
@@ -68,6 +59,7 @@ final class AudioPlayerPresenter<AudioPlayer: JamAudioPlayerProtocol>: Observabl
     @Published private(set) var audioSamples: [Float] = []
     @Published private(set) var audioDuration: TimeInterval = .zero
     @Published private(set) var audioCurrentTime: TimeInterval = .zero
+    @Published private(set) var audioPlaybackRate: AudioPlaybackRate = .default
     @Published private(set) var audioLoopRange: AudioLoopRange = .init(begenRatioOfAudioDuration: 0, endRatioOfAudioDuration: 1)
     @Published var shouldShowAudioFiles: AudioPlayer?
     
@@ -158,6 +150,7 @@ final class AudioPlayerPresenter<AudioPlayer: JamAudioPlayerProtocol>: Observabl
     }
     
     func didChange(audioPlaybackRate: AudioPlaybackRate) {
+        self.audioPlaybackRate = audioPlaybackRate
         audioPlayer.setPlaybackRate(rate: audioPlaybackRate.rawValue)
     }
     
